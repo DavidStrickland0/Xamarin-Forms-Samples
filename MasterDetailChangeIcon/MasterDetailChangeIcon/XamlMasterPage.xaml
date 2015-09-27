@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="MasterDetailChangeIcon.XamlMasterPage">
+	<MasterDetailPage.Master>
+		<ContentPage Title="Master(Color List)" BackgroundColor="Gray">
+			<StackLayout>
+				<ListView  ItemsSource="{Binding NamedColors}" x:Name="listView">
+				<ListView.ItemTemplate>
+					<DataTemplate>
+		            	<ViewCell>
+		                	<ViewCell.View>
+		                		<StackLayout Orientation="Horizontal">
+		                			<Image Source="{Binding ImagePath}"/>
+		                			<Label Text="{Binding Name}"/>
+		                		</StackLayout>
+		                	</ViewCell.View>
+		                </ViewCell>
+		            </DataTemplate>
+		            </ListView.ItemTemplate>
+				 </ListView> 
+			</StackLayout>
+		</ContentPage>
+	</MasterDetailPage.Master>
+	<MasterDetailPage.Detail>
+		<ContentPage   BindingContext="{Binding DetailData}" Title="{Binding Name}">
+			<ContentPage.Content>
+				<StackLayout HorizontalOptions = "Center" VerticalOptions = "CenterAndExpand">
+					<StackLayout HorizontalOptions = "Center" VerticalOptions = "CenterAndExpand">
+							<Label Text="{Binding Color.R,StringFormat='R = {0:F2}' }"/>
+							<Label Text="{Binding Color.G,StringFormat='G = {0:F2}' }"/>
+							<Label Text="{Binding Color.B,StringFormat='B = {0:F2}' }"/>
+					</StackLayout>
+					<BoxView WidthRequest="100" HeightRequest="100" HorizontalOptions="Center" Color="{Binding Color}"></BoxView>
+					<StackLayout HorizontalOptions = "Center" VerticalOptions = "CenterAndExpand">
+							<Label Text="{Binding Color.Hue,StringFormat='Hue = {0:F2}' }"/>
+							<Label Text="{Binding Color.Saturation,StringFormat='Saturation = {0:F2}' }"/>
+							<Label Text="{Binding Color.Luminosity,StringFormat='Luminosity = {0:F2}' }"/>
+					</StackLayout>
+				</StackLayout>
+			</ContentPage.Content>
+		</ContentPage>
+	</MasterDetailPage.Detail>
+</MasterDetailPage>
