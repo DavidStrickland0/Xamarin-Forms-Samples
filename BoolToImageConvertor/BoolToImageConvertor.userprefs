@@ -1,0 +1,16 @@
+﻿<Properties StartupItem="Droid\BoolToImageConvertor.Droid.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.4d00e18284239000" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BoolToImageConvertor\ImagePathConvertor.cs">
+    <Files>
+      <File FileName="BoolToImageConvertor\MyPage.xaml" Line="5" Column="36" />
+      <File FileName="BoolToImageConvertor\MyPage.xaml.cs" Line="14" Column="1" />
+      <File FileName="BoolToImageConvertor\BoolToImageConvertor.cs" Line="8" Column="1" />
+      <File FileName="BoolToImageConvertor\MyPageViewModel.cs" Line="40" Column="1" />
+      <File FileName="BoolToImageConvertor\ImagePathConvertor.cs" Line="5" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

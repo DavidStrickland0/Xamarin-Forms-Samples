@@ -6,7 +6,8 @@ namespace BoolToImageConvertor
 {
 	public class DumbViewModel :INotifyPropertyChanged 
 	{
-		public DumbViewModel (){}
+		public DumbViewModel (){
+		}
 
 
 		private bool boolOnOff;

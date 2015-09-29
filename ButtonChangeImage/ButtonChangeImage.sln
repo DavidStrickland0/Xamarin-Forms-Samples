@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ButtonChangeImage", "ButtonChangeImage\ButtonChangeImage.csproj", "{3B08311A-29F6-4866-8F75-A4CE69088AB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ButtonChangeImage.Droid", "Droid\ButtonChangeImage.Droid.csproj", "{3F4BD87B-533C-4E13-9440-0203D6394B43}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B08311A-29F6-4866-8F75-A4CE69088AB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B08311A-29F6-4866-8F75-A4CE69088AB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B08311A-29F6-4866-8F75-A4CE69088AB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B08311A-29F6-4866-8F75-A4CE69088AB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F4BD87B-533C-4E13-9440-0203D6394B43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F4BD87B-533C-4E13-9440-0203D6394B43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F4BD87B-533C-4E13-9440-0203D6394B43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F4BD87B-533C-4E13-9440-0203D6394B43}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

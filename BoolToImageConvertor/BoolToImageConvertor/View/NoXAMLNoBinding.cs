@@ -5,19 +5,19 @@ using System.ComponentModel;
 
 namespace BoolToImageConvertor
 {
-	public class NoXAMLDirectBinding : ContentPage
+	public class NoXAMLNoBinding : ContentPage
 	{
 		
-		public NoXAMLDirectBinding ()
+		public NoXAMLNoBinding ()
 		{
 			this.BindingContext = new DumbViewModel ();
-			Image img = new Image ();
+			Image img = new Image{Source="icon.png"};
+
 			((DumbViewModel)this.BindingContext).PropertyChanged += (sender, e) => {
 				if (((DumbViewModel)sender).BoolOnOff)
-					img.Source = "noci.png";
-				else
 					img.Source = "icon.png";
-
+				else
+					img.Source = "noci.png";
 			};
 
 			Switch switchView = new Switch();

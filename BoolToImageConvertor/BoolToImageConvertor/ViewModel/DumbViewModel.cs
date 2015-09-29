@@ -6,14 +6,17 @@ namespace BoolToImageConvertor
 {
 	public class DumbViewModel :INotifyPropertyChanged 
 	{
-		public DumbViewModel (){}
+		Account model;
+		public DumbViewModel (){
+			//Normally a call into a UOW etc to retrieve your data.
+			model = new Account ();
+		}
 
 
-		private bool boolOnOff;
 		public bool BoolOnOff {
-			get { return boolOnOff; } 
+			get { return model.IsActive; } 
 			set { 
-				boolOnOff = value; 
+				model.IsActive = value; 
 				RaisePropertyChanged ("BoolOnOff");
 			}
 		}

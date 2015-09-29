@@ -4,9 +4,13 @@ using System.ComponentModel;
 
 namespace BoolToImageConvertor
 {
-	public class DumbViewModelNoXaml :INotifyPropertyChanged 
+	public class SmartViewModel :INotifyPropertyChanged 
 	{
-		public DumbViewModelNoXaml (){}
+		Account model;
+		public SmartViewModel (){
+			//Normally a call into a UOW etc to retrieve your data.
+			model = new Account ();
+		}
 
 
 		private string imagePath="icon.png";
@@ -18,11 +22,10 @@ namespace BoolToImageConvertor
 			}
 		}
 
-		private bool boolOnOff;
 		public bool BoolOnOff {
-			get { return boolOnOff; } 
+			get { return model.IsActive; } 
 			set { 
-				boolOnOff = value; 
+				model.IsActive = value; 
 				RaisePropertyChanged ("BoolOnOff");
 			}
 		}
@@ -34,9 +37,9 @@ namespace BoolToImageConvertor
 
 			if (name == "BoolOnOff") {
 				if (BoolOnOff)
-					ImagePath = "noci.png";
-				else
 					ImagePath = "icon.png";
+				else
+					ImagePath = "noci.png";
 			}
 
 			PropertyChangedEventHandler handler = PropertyChanged;

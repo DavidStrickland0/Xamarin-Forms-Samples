@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoolToImageConvertion", "BoolToImageConvertor\BoolToImageConvertion.csproj", "{9FAAFEDD-191E-44E9-966F-D49EC42D2241}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoolToImageConvertion.Droid", "Droid\BoolToImageConvertion.Droid.csproj", "{1F5A024A-58E4-423D-AECC-F945FC69AA51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoolToImageConvertor.UITests", "UITests\BoolToImageConvertor.UITests.csproj", "{45C9CA76-2CA8-4C6B-BC84-AB377D3D49FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F5A024A-58E4-423D-AECC-F945FC69AA51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F5A024A-58E4-423D-AECC-F945FC69AA51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F5A024A-58E4-423D-AECC-F945FC69AA51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F5A024A-58E4-423D-AECC-F945FC69AA51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45C9CA76-2CA8-4C6B-BC84-AB377D3D49FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45C9CA76-2CA8-4C6B-BC84-AB377D3D49FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45C9CA76-2CA8-4C6B-BC84-AB377D3D49FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45C9CA76-2CA8-4C6B-BC84-AB377D3D49FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FAAFEDD-191E-44E9-966F-D49EC42D2241}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FAAFEDD-191E-44E9-966F-D49EC42D2241}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FAAFEDD-191E-44E9-966F-D49EC42D2241}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FAAFEDD-191E-44E9-966F-D49EC42D2241}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,14 @@
+﻿<Properties StartupItem="Droid\ButtonChangeImage.Droid.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.4d00e18284239000" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ButtonChangeImage\MyPage.cs">
+    <Files>
+      <File FileName="ButtonChangeImage\ButtonChangeImage.cs" Line="17" Column="1" />
+      <File FileName="ButtonChangeImage\MyPage.cs" Line="45" Column="3" />
+      <File FileName="ButtonChangeImage\packages.config" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

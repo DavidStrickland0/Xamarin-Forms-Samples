@@ -17,9 +17,9 @@ namespace BoolToImageConvertor
 			if (value is bool)  {
 
 				if((bool)value == true)
-					return "icon.png";
-				else
 					return "noci.png";
+				else
+					return "icon.png";
 			}
 			return "";
 		}

@@ -4,15 +4,15 @@ using Xamarin.Forms;
 
 namespace BoolToImageConvertor
 {
-	public class Account : ContentPage
+	public class Account 
 	{
 		public Account ()
 		{
-			Content = new StackLayout { 
-				Children = {
-					new Label { Text = "Hello ContentPage" }
-				}
-			};
+			IsActive = true;
+		}
+		public bool IsActive {
+			get;
+			set;
 		}
 	}
 }

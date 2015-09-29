@@ -1,17 +1,19 @@
 ﻿using System;
-
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace BoolToImageConvertor
 {
-	public class NoXAML : ContentPage
+	public class NoXAMLWithConvertor : ContentPage
 	{
 		
-		public NoXAML ()
+		public NoXAMLWithConvertor ()
 		{
-			this.BindingContext = new DumbViewModel ();
+			this.BindingContext = DumbViewModel ();
+
 			Image img = new Image ();
-			img.SetBinding<DumbViewModel>(Image.SourceProperty,dvm=>dvm.BoolOnOff,0,new ImagePathConvertor());
+			img.SetBinding<SmartViewModel>(Image.SourceProperty,dvm=>dvm.BoolOnOff,0,new ImagePathConvertor());
+
 			Switch switchView = new Switch();
 			switchView.SetBinding<DumbViewModel> (Switch.IsToggledProperty,dvm=>dvm.BoolOnOff);
 
