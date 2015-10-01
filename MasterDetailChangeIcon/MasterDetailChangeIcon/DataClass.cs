@@ -9,10 +9,6 @@ namespace MasterDetailChangeIcon
 {
 		public class DataClass
 		{
-			public string Name {
-				get;
-				set;
-			}
 
 			private ObservableCollection<NamedColor> namedColors;
 			public ObservableCollection<NamedColor> NamedColors
@@ -61,6 +57,7 @@ namespace MasterDetailChangeIcon
 				set
 				{
 					detailData = value;
+					OnPropertyChanged ("DetailData");
 				}
 			}
 

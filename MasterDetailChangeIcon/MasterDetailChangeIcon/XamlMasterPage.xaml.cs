@@ -59,7 +59,7 @@ namespace MasterDetailChangeIcon
 			this.IsPresentedChanged += (sender, e) => {
 				if (!IsPresented) {
 					((NamedColor)listView.SelectedItem).Name = ((NamedColor)listView.SelectedItem).Name.ToLower (); 
-					((NamedColor)listView.SelectedItem).ImagePath="noci.png";
+					((NamedColor)listView.SelectedItem).IsViewed=true;
 				}
 				OnPropertyChanged("DataClass");
 				this.BindingContext = null;

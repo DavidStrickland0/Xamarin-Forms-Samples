@@ -1,15 +1,22 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="MasterDetailChangeIcon.XamlMasterPage">
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="MasterDetailChangeIcon.XamlMasterPage"
+xmlns:local="clr-namespace:MasterDetailChangeIcon;assembly=MasterDetailChangeIcon"
+>
 	<MasterDetailPage.Master>
 		<ContentPage Title="Master(Color List)" BackgroundColor="Gray">
-			<StackLayout>
+			<ContentPage.Resources>
+		    	<ResourceDictionary>
+		            <local:ImagePathConvertor x:Key="cnvInvert" />
+		    	</ResourceDictionary>
+		  	</ContentPage.Resources>	
+  			<StackLayout>
 				<ListView  ItemsSource="{Binding NamedColors}" x:Name="listView">
 				<ListView.ItemTemplate>
 					<DataTemplate>
 		            	<ViewCell>
 		                	<ViewCell.View>
 		                		<StackLayout Orientation="Horizontal">
-		                			<Image Source="{Binding ImagePath}"/>
+		                			<Image Source="{Binding IsViewed, Converter={StaticResource cnvInvert}}"/>
 		                			<Label Text="{Binding Name}"/>
 		                		</StackLayout>
 		                	</ViewCell.View>

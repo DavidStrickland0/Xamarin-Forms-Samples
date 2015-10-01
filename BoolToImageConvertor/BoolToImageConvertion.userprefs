@@ -1,18 +1,18 @@
 ﻿<Properties StartupItem="Droid\BoolToImageConvertion.Droid.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Xamarin_Android_API_15" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="BoolToImageConvertor\View\WithConvertor.xaml">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.4d00e18284239000" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BoolToImageConvertor\View\NoXAMLWithConvertor.cs">
     <Files>
       <File FileName="BoolToImageConvertor\App.cs" Line="1" Column="1" />
       <File FileName="BoolToImageConvertor\DumbViewModelNoXaml.cs" Line="1" Column="1" />
-      <File FileName="BoolToImageConvertor\View\NoXAMLWithConvertor.cs" Line="1" Column="1" />
+      <File FileName="BoolToImageConvertor\View\NoXAMLWithConvertor.cs" Line="31" Column="1" />
       <File FileName="BoolToImageConvertor\View\DirectBinding.xaml.cs" Line="1" Column="1" />
       <File FileName="BoolToImageConvertor\ViewModel\SmartViewModel.cs" Line="1" Column="1" />
-      <File FileName="BoolToImageConvertor\View\DirectBinding.xaml" Line="5" Column="1" />
-      <File FileName="BoolToImageConvertor\View\WithConvertor.xaml" Line="19" Column="15" />
-      <File FileName="BoolToImageConvertor\View\NoXAMLNoBinding.cs" Line="28" Column="8" />
+      <File FileName="BoolToImageConvertor\View\DirectBinding.xaml" Line="1" Column="1" />
+      <File FileName="BoolToImageConvertor\View\WithConvertor.xaml" Line="3" Column="79" />
+      <File FileName="BoolToImageConvertor\View\NoXAMLNoBinding.cs" Line="1" Column="1" />
       <File FileName="BoolToImageConvertor\ViewModel\DumbViewModel.cs" Line="1" Column="1" />
       <File FileName="BoolToImageConvertor\Convertor\ImagePathConvertor.cs" Line="6" Column="1" />
-      <File FileName="BoolToImageConvertor\View\NoXAMLDirectBinding.cs" Line="8" Column="1" />
+      <File FileName="BoolToImageConvertor\View\NoXAMLDirectBinding.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

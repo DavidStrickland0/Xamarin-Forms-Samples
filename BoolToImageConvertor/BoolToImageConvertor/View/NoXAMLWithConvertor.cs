@@ -9,7 +9,7 @@ namespace BoolToImageConvertor
 		
 		public NoXAMLWithConvertor ()
 		{
-			this.BindingContext = DumbViewModel ();
+			this.BindingContext = new DumbViewModel ();
 
 			Image img = new Image ();
 			img.SetBinding<SmartViewModel>(Image.SourceProperty,dvm=>dvm.BoolOnOff,0,new ImagePathConvertor());

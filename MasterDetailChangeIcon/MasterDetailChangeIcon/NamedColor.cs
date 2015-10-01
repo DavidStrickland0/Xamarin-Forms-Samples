@@ -21,19 +21,19 @@ namespace MasterDetailChangeIcon
 			} 
 			get{ return name; } 
 		}
+		private bool isViewed;
+		public bool IsViewed {
+			get{ return isViewed; }
+			set{isViewed = value;
+				OnPropertyChanged ("IsViewed");
+			}
+		}
 		private Color color;
         public Color Color { 
 			set{color = value;
 				OnPropertyChanged ("Color");
 			} 
 			get{return color;} 
-		}
-		private string imagePath = "icon.png";
-		public string ImagePath { 
-			set{imagePath = value;
-				OnPropertyChanged ("ImagePath");
-			} 
-			get{return imagePath;} 
 		}
 		protected void OnPropertyChanged(string propertyName)
         {

@@ -1,26 +1,27 @@
 ﻿using System;
 using Xamarin.Forms;
+using System.Collections.ObjectModel;
 
-namespace MasterDetailChangeIcon
+
+namespace AddToList
 {
 	public class ImagePathConvertor : IValueConverter
 	{
-		public ImagePathConvertor()
-		{
-		}
+		public ImagePathConvertor(){}
 
 		#region IValueConverter implementation
 
 		public object Convert (object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
 		{
-			if (value is bool)  {
-
-				if((bool)value == true)
-					return "noci.png";
-				else
-					return "icon.png";
+			if ((bool)value) {
+				return "minus";
 			}
-			return "";
+			else
+			{
+				return "add";
+			}
+				
+
 		}
 
 		public object ConvertBack (object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
