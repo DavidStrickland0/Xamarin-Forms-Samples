@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToggleSwitchBinding", "ToggleSwitchBinding\ToggleSwitchBinding.csproj", "{591F0BCE-5D54-4C6C-A5FF-83B1B23038BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToggleSwitchBinding.Droid", "Droid\ToggleSwitchBinding.Droid.csproj", "{01DEFA7A-A6B1-441F-8B0F-4D99E88D027E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToggleSwitchBinding.UITests", "UITests\ToggleSwitchBinding.UITests.csproj", "{5BF1BC98-2A6C-4276-8F66-A92E69A0BE21}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01DEFA7A-A6B1-441F-8B0F-4D99E88D027E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01DEFA7A-A6B1-441F-8B0F-4D99E88D027E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01DEFA7A-A6B1-441F-8B0F-4D99E88D027E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01DEFA7A-A6B1-441F-8B0F-4D99E88D027E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{591F0BCE-5D54-4C6C-A5FF-83B1B23038BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{591F0BCE-5D54-4C6C-A5FF-83B1B23038BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{591F0BCE-5D54-4C6C-A5FF-83B1B23038BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{591F0BCE-5D54-4C6C-A5FF-83B1B23038BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BF1BC98-2A6C-4276-8F66-A92E69A0BE21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BF1BC98-2A6C-4276-8F66-A92E69A0BE21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BF1BC98-2A6C-4276-8F66-A92E69A0BE21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BF1BC98-2A6C-4276-8F66-A92E69A0BE21}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
