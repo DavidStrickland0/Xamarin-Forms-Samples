@@ -7,11 +7,14 @@ namespace ToggleSwitchBinding
 {
 	public class App : Application
 	{
+		public ICommand ToggleIt{get;set;}
 		public App ()
 		{
 			ToggleIt = new Command (() => IsToggled = !IsToggled);
-			var mySwitch = new Switch();
-			mySwitch.SetBinding (Switch.IsToggledProperty, "IsToggled", 0); 
+
+
+			SwitchCell mySwitch = new SwitchCell ();
+			mySwitch.SetBinding (SwitchCell.OnProperty , "IsToggled", 0); 
 			var myButton = new Button(){
 				Text="CLICK IT! CLICK IT! CLICK IT!  YOU KNOW YOU WANT TO",
 				Command = ToggleIt};
@@ -22,7 +25,17 @@ namespace ToggleSwitchBinding
 					VerticalOptions = LayoutOptions.Center,
 					Children = {
 						myButton,
-						mySwitch
+						new TableView
+						{
+							Intent = TableIntent.Form,
+							Root = new TableRoot
+							{
+								new TableSection
+								{
+									mySwitch
+								}
+							}
+						}
 					}
 				}
 			};
@@ -37,7 +50,7 @@ namespace ToggleSwitchBinding
 			}
 		}
 
-				public ICommand ToggleIt{get;set;}
+
 
 	}
 }
