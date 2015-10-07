@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XLabs.Sample.Pages.Controls.ExtendedPickerPage"
+xmlns:controls="clr-namespace:XLabs.Forms.Controls;assembly=SampleExtendedPicker"
+       Title="Picker">
+	<ContentPage.Content>
+		<StackLayout x:Name="myStackLayout">
+			<Label Text="Xaml:"/>
+			<controls:ExtendedPicker x:Name="myPicker" ItemsSource="{Binding MyDataList}" DisplayProperty="FirstName" SelectedItem="{Binding TheChosenOne}"/>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
