@@ -1,0 +1,17 @@
+﻿<Properties StartupItem="Droid\rendererdemo.Droid.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.4d00e18284239000" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Droid\LegalCheckboxRenderer.cs">
+    <Files>
+      <File FileName="Droid\LegalCheckboxRenderer.cs" Line="16" Column="1" />
+      <File FileName="rendererdemo\LegalCheckbox.cs" Line="1" Column="1" />
+      <File FileName="rendererdemo\rendererdemo.cs" Line="1" Column="1" />
+      <File FileName="..\..\Program Files\MSBuild\Xamarin\Android\Xamarin.Android.Common.targets" Line="290" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="C:\Source\rendererdemo\Droid\LegalCheckboxRenderer.cs" line="19" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
