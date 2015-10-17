@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListViewItemConverter", "ListViewItemConverter\ListViewItemConverter.csproj", "{6A919718-2095-408C-8CEF-6A5759960ED7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListViewItemConverter.Droid", "Droid\ListViewItemConverter.Droid.csproj", "{E4E9B6F4-7E8D-4E18-B6CB-B8A371015BFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListViewItemConverter.UITests", "UITests\ListViewItemConverter.UITests.csproj", "{2196A576-5CEC-4C32-BAB6-3B1616F23F2E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2196A576-5CEC-4C32-BAB6-3B1616F23F2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2196A576-5CEC-4C32-BAB6-3B1616F23F2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2196A576-5CEC-4C32-BAB6-3B1616F23F2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2196A576-5CEC-4C32-BAB6-3B1616F23F2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A919718-2095-408C-8CEF-6A5759960ED7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A919718-2095-408C-8CEF-6A5759960ED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A919718-2095-408C-8CEF-6A5759960ED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A919718-2095-408C-8CEF-6A5759960ED7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4E9B6F4-7E8D-4E18-B6CB-B8A371015BFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4E9B6F4-7E8D-4E18-B6CB-B8A371015BFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4E9B6F4-7E8D-4E18-B6CB-B8A371015BFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4E9B6F4-7E8D-4E18-B6CB-B8A371015BFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

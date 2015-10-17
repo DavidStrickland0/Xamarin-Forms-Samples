@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"
+?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ListViewItemConverter.MyPage"
+xmlns:local="clr-namespace:ListViewItemConverter;assembly=ListViewItemConverter"
+BackgroundColor="Green" >
+	<ContentPage.Resources>
+        <ResourceDictionary>
+            <local:DistanceConverter x:Key="distanceConverter"></local:DistanceConverter>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+	<ContentPage.Content>
+<ListView ItemsSource="{Binding Places}">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <Grid>
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="Auto"/>
+                  <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="*"/>
+                  <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Label TextColor="White" Text="{Binding Name}" Grid.ColumnSpan="2" FontSize="20" />
+
+                <Label TextColor="White" Text="{Binding Path=. , Converter={StaticResource distanceConverter}}" Grid.Row="1" />
+                <Label TextColor="White" Text="{Binding Path=. , Converter={StaticResource distanceConverter}}" Grid.Row="1" XAlign="End" Grid.Column="1"/>
+              </Grid>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+	</ContentPage.Content>
+</ContentPage>
