@@ -1,0 +1,22 @@
+﻿<Properties StartupItem="Droid\LoginFormExample.Droid.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.4d00e18284239000" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="LoginFormExample\LoginViewPage.xaml.cs">
+    <Files>
+      <File FileName="LoginFormExample\LoginFormExample.cs" Line="19" Column="3" />
+      <File FileName="LoginFormExample\LoginModel.cs" Line="1" Column="1" />
+      <File FileName="LoginFormExample\LoginViewModel2.cs" Line="4" Column="1" />
+      <File FileName="LoginFormExample\LoginViewFormInCS.cs" Line="1" Column="1" />
+      <File FileName="LoginFormExample\LoginViewPage.xaml" Line="1" Column="1" />
+      <File FileName="LoginFormExample\LoginViewPage2.xaml" Line="1" Column="1" />
+      <File FileName="LoginFormExample\LoginViewModel.cs" Line="1" Column="1" />
+      <File FileName="LoginFormExample\LoginViewPage.xaml2.cs" Line="19" Column="2" />
+      <File FileName="LoginFormExample\LoginViewPage.xaml.cs" Line="21" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="C:\Users\David\Documents\GitHub\Xamarin-Forms-Samples\LoginSample\LoginFormExample\LoginViewModel.cs" line="15" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
