@@ -27,7 +27,14 @@ namespace rendererdemo.Droid
             base.SetNativeControl(control);
 			Control.Click+=(sender,evt)=> 
 				legalCheckBox.Checked = ((CheckBox)sender).Checked;
+
+			e.NewElement.OnDoStuff+=(sender,ev)=> DoStuff();
+
         }
+		public void DoStuff ()
+		{
+			System.Diagnostics.Debug.WriteLine ("Zug Zug, Job Done");
+		}
     }
 }
 

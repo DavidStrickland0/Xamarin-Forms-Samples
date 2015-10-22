@@ -15,6 +15,15 @@ namespace rendererdemo
         public LegalCheckbox ()
         {
         }
+
+		public EventHandler OnDoStuff;
+		public void DoStuff()
+		{
+			if(OnDoStuff!=null)
+			{
+				OnDoStuff (this, new EventArgs ());
+			}
+		}
     }
 }
 

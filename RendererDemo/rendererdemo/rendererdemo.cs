@@ -36,7 +36,12 @@ namespace rendererdemo
                     }
                 }
             };
+
         }
+
+
+
+
 
         protected override void OnStart ()
         {
