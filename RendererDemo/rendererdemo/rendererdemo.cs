@@ -13,15 +13,26 @@ namespace rendererdemo
         {
             var lcb = new LegalCheckbox();
             // The root page of your application
+            var CheckButton = new Button();
+            var result = new Label();
+            CheckButton.Clicked += (sender, e) =>
+            {
+                if (lcb.Checked)
+                {
+                    result.Text = "Its Checked";
+                }
+                else
+                {
+                    result.Text = "Not Checked";
+                }
+            };
             MainPage = new ContentPage {
                 Content = new StackLayout {
                     VerticalOptions = LayoutOptions.Center,
                     Children = {
                         lcb,
-                        new Label {
-                            XAlign = TextAlignment.Center,
-                            Text = "Welcome to Xamarin Forms!"
-                        }
+                        CheckButton,
+                        result
                     }
                 }
             };

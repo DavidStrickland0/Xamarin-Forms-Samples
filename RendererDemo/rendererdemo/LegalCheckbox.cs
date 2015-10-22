@@ -8,9 +8,12 @@ namespace rendererdemo
 {
     public class LegalCheckbox : View
     {
+		public bool Checked { 
+			get; 
+			set; 
+		}
         public LegalCheckbox ()
         {
-
         }
     }
 }

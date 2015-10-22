@@ -14,14 +14,19 @@ namespace rendererdemo.Droid
 {
     public class CheckBoxRenderer : ViewRenderer<LegalCheckbox, CheckBox>
     {
+		CheckBox control; 
+		private LegalCheckbox legalCheckBox;
         protected override void OnElementChanged (ElementChangedEventArgs<LegalCheckbox> e)
         {
             base.OnElementChanged (e);
-            CheckBox control = new Android.Widget.CheckBox(this.Context);
+			legalCheckBox = e.NewElement;
+            control = new Android.Widget.CheckBox(this.Context);
             control.Checked = false;
             control.Text = "I agree to terms";
             control.SetTextColor (Android.Graphics.Color.Rgb (60, 60, 60));
             base.SetNativeControl(control);
+			Control.Click+=(sender,evt)=> 
+				legalCheckBox.Checked = ((CheckBox)sender).Checked;
         }
     }
 }
